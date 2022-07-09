@@ -1,7 +1,7 @@
 {
   "name": "3d-donate-api",
   "version": "0.0.1",
-  "main": "server.js",
+  "main": "src/server.js",
   "author": "Jaeger <omer.kayalar0101@icloud.com>",
   "dependencies": {
     "axios": "^0.27.2",
@@ -24,6 +24,6 @@
     "prettier": "^2.7.1"
   },
   "scripts": {
-    "start-local": "cross-env NODE_ENV=development PORT=3005 node server.js"
+    "start-local": "cross-env NODE_ENV=development PORT=3005 node src/server.js"
   }
 }
