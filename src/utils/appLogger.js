@@ -1,4 +1,10 @@
-const { green, red, yellow, white, bold } = require('chalk');
+const {
+  green,
+  red,
+  yellow,
+  white,
+  bold,
+} = require('chalk');
 
 const validateMSG = (msg) => {
   if (msg && typeof msg === 'string') {
@@ -10,7 +16,9 @@ const validateMSG = (msg) => {
 
 const log = (msg) => {
   if (validateMSG(msg)) {
-    return console.log(`${green(bold('[ 3DD-API ] :'))} ${white(msg)}`);
+    return console.log(
+      `${green(bold('[ 3DD-API ] :'))} ${white(msg)}`
+    );
   }
 
   return false;
@@ -18,7 +26,9 @@ const log = (msg) => {
 
 const warn = (msg) => {
   if (validateMSG(msg)) {
-    return console.log(`${yellow(bold('[ 3DD-API ] :'))} ${white(msg)}`);
+    return console.log(
+      `${yellow(bold('[ 3DD-API ] :'))} ${white(msg)}`
+    );
   }
 
   return false;
@@ -26,7 +36,9 @@ const warn = (msg) => {
 
 const error = (msg) => {
   if (validateMSG(msg)) {
-    return console.log(`${red(bold('[ 3DD-API ] :'))} ${white(msg)}`);
+    return console.log(
+      `${red(bold('[ 3DD-API ] :'))} ${white(msg)}`
+    );
   }
 
   return false;
